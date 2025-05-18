@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday, My Love!</title>
+  <link rel="stylesheet" href="birthday.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <h1>Happy Birthday, My Love! <span class="heart">❤️</span></h1>
+  <p>Wishing you a day filled with laughter, love, and all the sweetness you bring into my life. I love you so much!💕</p>
+
+  <!-- Album -->
+  <div class="album">
+    <img src="pic1.jfif" alt="Edeliza" />
+    <img src="pic2 (1).jfif" alt="Party" />
+    <img src="pic 3.jfif" alt="Gifts" />
+    <img src="pic 4.jfif" alt="Balloons" />
+    
+  </div>
+
+  <!-- Lightbox for album -->
+  <div id="lightbox" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); align-items:center; justify-content:center; cursor:pointer; z-index:999;">
+    <img id="lightbox-img" src="" alt="Preview" style="max-width:90%; max-height:90%; border-radius:20px;" />
+  </div>
+
+  <!-- Floating Balloons -->
+<div id="balloon-container"></div>
+<canvas id="fireworks"></canvas>
+
+  <footer style="margin-top: 40px; font-size: 1rem; color: #d81e5b;">
+    Made with ❤️ just for you
+  </footer>
+
+ 
+ <button class="play-button" onclick="document.getElementById('bg-music').play()">
+    💖 Click 💖
+  </button>
+
+  <audio id="bg-music" loop>
+    <source src="music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="birthday.js"></script>
+</body>
+</html>
